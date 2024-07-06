@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00c6ff;
+}
+
+/* Header Styles */
+.header {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.header a:hover {
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  color: #00c6ff;
+}
+
+.navbar a.active {
+  background-color: #00c6ff;
+  color: #111;
+}
+
+/* Content Styles */
+.content {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  color: #ff0;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #ff0;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px; /* Increase padding between buttons */
+}
+
+/* Password Generator Styles */
+.password-generator {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.password-generator button {
+  background-color: #00c6ff;
+  color: #111;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 198, 255, 0.2);
+  border-radius: 20px; /* Make the button edges circular */
+}
+
+.password-generator button:hover {
+  background-color: #008bb0;
+  transform: scale(1.05);
+}
+
+.checkbox-group {
+  margin-bottom: 10px;
+}
+
+.password-length {
+  margin-bottom: 10px;
+}
+
+#generatedPassword {
+  margin-bottom: 10px;
+}
+
+#recentPasswords {
+  margin-top: 10px;
+}
+
+#recentPasswords h3 {
+  margin-bottom: 10px;
+  color: #ff0;
+}
+
+/* Password Manager Styles */
+.password-manager {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.password-manager input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #444;
+  color: #ccc;
+}
+
+.password-manager button {
+  background-color: #00c6ff;
+  color: #111;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 198, 255, 0.2);
+  border-radius: 20px; /* Make the button edges circular */
+}
+
+.password-manager button:hover {
+  background-color: #008bb0;
+  transform: scale(1.05);
+}
+
+#output {
+  margin-top: 10px;
+  color: #ff0;
+}
+
+/* Website Security Check Styles */
+.website-security {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.website-security input[type="text"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #444;
+  color: #ccc;
+}
+
+.website-security button {
+  background-color: #00c6ff;
+  color: #111;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 198, 255, 0.2);
+  border-radius: 20px; /* Make the button edges circular */
+}
+
+.website-security button:hover {
+  background-color: #008bb0;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 10px;
+  color: #ff0;
+}
+
+/* File Scanner Styles */
+.file-scanner {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#scanResult {
+  margin-top: 10px;
+  color: #ff0;
+}
+
+/* Ad Blocker Styles */
+.ad-blocker {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.ad-blocker p {
+  margin-bottom: 10px;
+  color: #ff0;
+}
+
+/* Web Security Assistant Styles */
+.web-security-assistant {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.web-security-assistant button {
+  background-color: #00c6ff;
+  color: #111;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 198, 255, 0.2);
+  border-radius: 20px; /* Make the button edges circular */
+}
+
+.web-security-assistant button:hover {
+  background-color: #008bb0;
+  transform: scale(1.05);
+}
+
+.web-security-assistant #bot-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #00c6ff;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  animation: bounce 1s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.web-security-assistant select {
+  width: 50%; /* Adjust the width for a smaller field */
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#answer {
+  margin-top: 10px;
+  color: #ff0;
+}
+
+/* Firewall Security Styles */
+#log-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #666;
+  clear: both;
+}
+
+.footer p {
+  margin: 5px 0;
+}

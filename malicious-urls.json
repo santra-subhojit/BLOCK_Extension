@@ -1,0 +1,10 @@
+{
+    "maliciousUrls": [
+      "http://example.com/malicious",
+      "http://malicious-site.com",
+      "http://another-malicious-site.com",
+      "https://www.torrentz.eu.com/#gsc.tab=0"
+      
+    ]
+  }
+  

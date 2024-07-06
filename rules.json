@@ -1,0 +1,24 @@
+[
+    {
+      "type": "domain",
+      "value": "malicious-site.com"
+    },
+    {
+        "type": "domain",
+        "value": "www.utorrent.com"
+      },
+    {
+      "type": "domain",
+      "value": "phishing-site.org"
+    },
+    {
+      "type": "path",
+      "value": "/login"
+    },
+    {
+      "type": "path",
+      "value": "/account"
+    }
+
+  ]
+  

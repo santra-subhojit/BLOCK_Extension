@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "BLOCK: Robust Security Extension",
+    "version": "1.0.0",
+    "description": "A Chrome extension to enhance web security of your Browsing experience.",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "activeTab",
+        "*://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}

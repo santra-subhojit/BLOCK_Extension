@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOCK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>BLOCK: Robust Security WEB Extension</h1>
+    <div class="header-links">
+      <a href="registration.html" id="registrationLink">Registration</a>
+      <a href="help.html" id="helpSupportLink">Help & Support</a>
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Solution to Your Internet Security Problems -->
+    <div class="content">
+      <h2>Solution to Your Internet Security Problems</h2>
+      <textarea id="textInput" placeholder="Type here..."></textarea>
+      <div class="button-container">
+        <button id="encryptButton">Encrypt</button>
+        <button id="decryptButton">Decrypt</button>
+      </div>
+    </div>
+
+    <!-- Password Generator Section -->
+    <div class="content">
+      <h2>Password Generator</h2>
+      <div class="password-generator">
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="numbers" checked> Numbers</label>
+          <label><input type="checkbox" id="symbols" checked> Symbols</label>
+          <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+          <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+        </div>
+        <div class="password-length">
+          <label for="passwordLength">Password Length: <span id="lengthValue">12</span></label>
+          <input type="range" id="passwordLength" min="8" max="32" value="12">
+        </div>
+        <input type="text" id="generatedPassword" readonly>
+        <button id="generateBtn">Generate Password</button>
+        <button id="saveBtn">Save Password</button>
+        <button id="toggleRecentBtn">Show Recent Passwords</button>
+        <div id="recentPasswords">
+          <h3>Recent Passwords</h3>
+          <ul id="passwordList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password Manager Section -->
+    <div class="content">
+      <h2>Password Manager</h2>
+      <div class="password-manager">
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <button id="saveButton">Save Password</button>
+        <button id="retrieveButton">Retrieve Password</button>
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <!-- Website Security Check Section -->
+    <div class="content">
+      <h2>Website Security Check</h2>
+      <div class="website-security">
+        <p>Enter a website URL to check if it's malicious:</p>
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button id="checkButton">Check</button>
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <!-- File Scanner Section -->
+    <div class="content">
+      <h2>File Scanner</h2>
+      <div class="file-scanner">
+        <input type="file" id="fileInput" accept=".txt, .pdf, .doc, .docx, .zip">
+        <button id="scanButton">Scan File</button>
+        <div id="scanResult"></div>
+      </div>
+    </div>
+
+    <!-- Ad Blocker Section -->
+    <div class="content">
+      <h2>Ad Blocker</h2>
+      <div class="ad-blocker">
+        <p>
+          <label class="switch">
+            <input type="checkbox" id="toggleAdBlocker">
+            <span class="slider"></span>
+          </label>
+          Ad Blocker Enabled
+        </p>
+        <p>Ads blocked: <span id="adsBlocked">0</span></p>
+        <p>Trackers blocked: <span id="trackersBlocked">0</span></p>
+      </div>
+    </div>
+
+    <!-- Web Security Assistant Section -->
+    <div class="content">
+      <h2>Web Assistant</h2>
+      <div class="web-security-assistant">
+        <select id="securityQuestions">
+          <option value="1">What is secure browsing?</option>
+          <option value="2">How can I protect my website from SQL injection?</option>
+          <option value="3">What are the common types of phishing attacks?</option>
+          <option value="4">Why is HTTPS important for website security?</option>
+          <option value="5">What are the best practices for securing a web application?</option>
+          <option value="6">How can I protect my passwords online?</option>
+          <option value="7">What is phishing?</option>
+          <option value="8">How does your web security extension protect against malicious websites?</option>
+          <option value="9">Why should I use ad blockers for web security?</option>
+          <option value="10">How can I stay informed about the latest web security threats?</option>
+        </select>
+        <button id="askButton">Ask</button>
+        <div id="answer"></div>
+      </div>
+    </div>
+
+    <!-- Firewall Security Section -->
+    <div class="content">
+      <h2>FIREWALL SECURITY</h2>
+      <div id="log-container"></div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 BLOCK. All Rights Reserved. Trademarks belong to their respective owners.</p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="popup.js"></script>
+  <script src="passwordManager.js"></script>
+  <script src="passwordGenerator.js"></script>
+  <script src="checkURL.js"></script>
+  <script src="ad.js"></script>
+  <script src="file.js"></script>
+  <script src="firewall.js"></script>
+  <script src="ask.js"></script>
+</body>
+</html>
